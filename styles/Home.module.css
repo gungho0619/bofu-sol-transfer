@@ -1,0 +1,232 @@
+.App {
+  background: #fff308;
+}
+
+.AppHeader {
+  height: 90px;
+  display: flex;
+  background: #fff308;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+  max-width: 1300px;
+}
+
+.logoTitle {
+  display: flex;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.socialGroup {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.wrapperContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media screen and (max-width: 640px) {
+    padding: 0px 10px;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.title {
+  font-size: 48px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  @media screen and (max-width: 640px) {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.content {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentItem {
+  border: 1px solid black;
+  padding: 16px 12px;
+  border-radius: 12px;
+  background-color: #fff308;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentEmp {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  @media screen and (max-width: 840px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 12px;
+  }
+}
+
+.buyButton {
+  padding: 12px;
+  background-color: #fff308;
+  color: #1f1f1f;
+  border: 1px solid white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.address {
+  display: block;
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+}
+
+.abbaddress {
+  display: none;
+  @media screen and (max-width: 640px) {
+    display: block;
+  }
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 20px;
+}
+
+.comicon {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 20px 20px 20px;
+}
+
+.util {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjust the styling for screens with a maximum width of 600px */
+  .AppHeader {
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+
+  /* Adjust the styling of the logo and wallet button */
+  .AppHeader > div {
+    margin-bottom: 10px;
+  }
+}
+
+.AppBody {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 30px 0px 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  background: #f2f2f2;
+}
+
+.formField {
+  margin: 10px 0 10px 0;
+  min-width: 500px;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.formButton {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: rgb(23, 37, 42);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 37, 42, 1) 0%,
+    rgba(238, 0, 0, 1) 0%,
+    rgba(255, 98, 0, 1) 100%
+  );
+  border-radius: 20px;
+}
+.formButton:hover {
+  background: rgb(2, 126, 19);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 126, 19, 1) 0%,
+    rgba(0, 255, 55, 1) 100%
+  );
+  color: black;
+  width: 20%;
+  transform: translateY(-3px);
+  transition: 0.5s ease-in-out;
+}
+.box {
+  font-family: "Times New Roman", Times, serif;
+}
+.link {
+  color: yellowgreen;
+}
+
+.link:visited {
+  color: yellowgreen;
+}
