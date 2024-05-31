@@ -72,7 +72,11 @@ export const About: FC = () => {
       <div className={styles.story}>
         <div className={styles.title}>The Story</div>
         {Storys?.map((ele, key) => {
-          return <div className={styles.contentEmp}>{ele}</div>;
+          return (
+            <div key={`story${key}`} className={styles.contentEmp}>
+              {ele}
+            </div>
+          );
         })}
       </div>
       <div className={styles.comicon}>
@@ -80,7 +84,7 @@ export const About: FC = () => {
       </div>
       {Details.map((ele, key) => {
         return (
-          <div className={styles.content}>
+          <div key={`detail${key}`} className={styles.content}>
             <div className={styles.contentItem}>
               <div className={styles.column}>
                 <div className={styles.contentEmp}>{ele.label}</div>
@@ -95,7 +99,11 @@ export const About: FC = () => {
       </div>
       <div className={styles.content}>
         {Utils.map((ele, key) => {
-          return <div className={styles.contentEmp}>{ele}</div>;
+          return (
+            <div key={`util${key}`} className={styles.contentEmp}>
+              {ele}
+            </div>
+          );
         })}
       </div>
       <p style={{ height: "40px" }}></p>
